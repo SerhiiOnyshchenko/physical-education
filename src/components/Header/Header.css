@@ -1,0 +1,19 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--main-bg);
+	z-index: 100;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	display: inline-block;
+	background: url(../../images/svg/logo1.svg) no-repeat center;
+	width: 270px;
+	height: 80px;
+}

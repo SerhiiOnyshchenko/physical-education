@@ -1,0 +1,11 @@
+.footer {
+	height: 90px;
+	background-color: var(--main-bg);
+}
+.footer__container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-family: "Raleway", Arial, sans-serif;
+	font-weight: 500;
+}

@@ -1,0 +1,20 @@
+.nav__list {
+	display: flex;
+	color: var(--main-color);
+}
+.nav__item:not(:last-child) {
+	margin-right: 20px;
+}
+.nav__link {
+	color: var(--main-color);
+	line-height: 1.55;
+	padding: 10px 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	transition: border 0.2s ease-in-out;
+}
+.nav__link:hover,
+.nav__link:focus {
+	border: 1px solid var(--main-color);
+}
