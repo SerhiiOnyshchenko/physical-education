@@ -1,8 +1,9 @@
 import React from 'react';
 import Container from '../Container/Container';
 import './HomePage.css';
-import img from '../../images/coledge/17.jpg';
+import img from '../../images/coledge/1.jpg';
 import img4 from '../../images/coledge/14.jpg';
+import ButtonDown from '../ButtonDown/ButtonDown';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
               <span className="home__text-3">цикл</span>
             </h1>
           </div>
+          <ButtonDown />
         </Container>
       </div>
       <div className="home-2">

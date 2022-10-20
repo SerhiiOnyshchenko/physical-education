@@ -1,0 +1,35 @@
+.btnDown {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.btnDown__text {
+	font-size: 12px;
+	font-family: "Raleway", Arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.btnDown__btn {
+	width: 45px;
+	height: 54px;
+	background: center no-repeat url(../../images/svg/btn-down.svg);
+	animation: upDown 1s infinite linear;
+}
+@keyframes upDown {
+	0% {
+		transform: translateY(0);
+		animation-timing-function: ease-in-out;
+	}
+	50% {
+		transform: translateY(10px);
+		animation-timing-function: ease-in-out;
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

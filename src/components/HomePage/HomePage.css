@@ -1,5 +1,5 @@
 .home {
-	background-image: url(../../images/coledge/10.jpg);
+	background-image: url(../../images/coledge/16.jpg);
 	min-height: 680px;
 	height: 100vh;
 	background-position: center center;
@@ -34,7 +34,6 @@
 .home-2 {
 	position: relative;
 	padding-top: 60px;
-	background-color: var(--main-bg);
 	background-repeat: no-repeat;
 	min-height: 680px;
 	height: 100vh;
@@ -73,7 +72,6 @@
 .home-3 {
 	position: relative;
 	padding-top: 60px;
-	background-color: var(--main-bg);
 	background-image: url(../../images/svg/pattern_1.svg), url(../../images/coledge/14.jpg);
 	background-repeat: no-repeat, no-repeat;
 	background-size: contain, 700px 420px;
@@ -123,7 +121,6 @@
 
 .home-4 {
 	position: relative;
-	background-color: var(--main-bg);
 	background-image: url(../../images/svg/pattern_2.svg);
 	background-repeat: no-repeat;
 	background-size: contain;

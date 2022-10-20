@@ -41,6 +41,7 @@ input::-ms-clear {
 
 button {
 	cursor: pointer;
+	border: none;
 }
 
 button::-moz-focus-inner {
@@ -76,6 +77,7 @@ body {
 	color: var(--main-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(to right, #084f4b, #519895, #084f4b), linear-gradient(red, blue);
 }
 
 code {

@@ -1,6 +1,6 @@
 .footer {
 	height: 90px;
-	background-color: var(--main-bg);
+	background-color: transparent;
 }
 .footer__container {
 	display: flex;
@@ -8,4 +8,7 @@
 	height: 100%;
 	font-family: "Raleway", Arial, sans-serif;
 	font-weight: 500;
+}
+.TeachersPage ~ .footer {
+	background-color: var(--another-bg);
 }
