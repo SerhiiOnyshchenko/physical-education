@@ -145,12 +145,12 @@
 
 .box-img4 {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 100px;
+	left: 300px;
 	width: 700px;
 	height: 420px;
 	z-index: 9;
+	/* transition: all 0.5s linear; */
 }
 .box-text-4 {
 	position: absolute;
@@ -166,7 +166,6 @@
 .box-text-4 p {
 	font-size: 14px;
 	font-family: "Raleway", Arial, sans-serif;
-	/* line-height: 1.4; */
 	font-weight: 400;
 	letter-spacing: 0.5px;
 }

@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="history" className="nav__link">
             Історія
           </Link>
         </li>
@@ -29,6 +29,11 @@ export default function Navbar() {
         <li className="nav__item">
           <Link to="/" className="nav__link">
             Detox
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="contacts" className="nav__link">
+            Контакти
           </Link>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Container from '../Container/Container';
 import './HomePage.css';
 import img from '../../images/coledge/1.jpg';
@@ -6,8 +6,27 @@ import img4 from '../../images/coledge/14.jpg';
 import ButtonDown from '../ButtonDown/ButtonDown';
 
 export default function HomePage() {
+  const homeMouse = useRef(null);
+  const home2efect = useRef(null);
+  const home4efect = useRef(null);
+
+  useEffect(() => {
+    homeMouse.current.addEventListener('mousemove', parallax);
+  }, []);
+
+  function parallax(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const x = (width / 2 - mouseX) / 20;
+    const y = (height / 2 - mouseY) / 20;
+    home2efect.current.style.transform = `translate3d(${x}px,${y}px,0px)`;
+    home4efect.current.style.transform = `translate3d(${x}px,${y}px,0px)`;
+  }
   return (
-    <>
+    <div ref={homeMouse}>
       <div className="home">
         <Container>
           <div className="home__comtainer">
@@ -26,8 +45,8 @@ export default function HomePage() {
             <span className="home__text-1">THE DEEPEST</span>
             <span className="home__text-2">SITE</span>
           </h2>
-          <div className="box-img">
-            <img className="img" src={img} alt="image2" />
+          <div ref={home2efect} className="box-img">
+            <img className="img" src={img} alt="image2" height="420" />
           </div>
           <div className="box-text">
             <h4>Найглибший сайт Borjomi</h4>
@@ -60,7 +79,7 @@ export default function HomePage() {
               <span className="home__text-42">вода</span>
             </h2>
           </div>
-          <div className="box-img4">
+          <div ref={home4efect} className="box-img4">
             <img src={img4} alt="image1" width="700" height="420" />
           </div>
           <div className="box-text-4">
@@ -73,6 +92,6 @@ export default function HomePage() {
           </div>
         </Container>
       </div>
-    </>
+    </div>
   );
 }

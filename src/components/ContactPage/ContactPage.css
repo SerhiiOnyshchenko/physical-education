@@ -1,0 +1,37 @@
+.ContactPage {
+	background-color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+	color: #000;
+	padding: 150px;
+	height: 100vh;
+}
+h2.ContactPage__title {
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+.ContactPage__container {
+	display: flex;
+}
+.ContactPage__left {
+	width: 50%;
+	font-size: 16px;
+	line-height: 1.45;
+	padding-right: 30px;
+}
+.ContactPage__address-ua {
+	margin-bottom: 20px;
+}
+.ContactPage__title {
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.ContactPage__right {
+	width: 50%;
+}
+.ContactPage__right .ContactPage__title {
+	font-size: 26px;
+}

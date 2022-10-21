@@ -12,3 +12,8 @@
 .TeachersPage ~ .footer {
 	background-color: var(--another-bg);
 }
+.ContactPage ~ .footer,
+.HistoryPage ~ .footer {
+	background-color: var(--light-bg);
+	color: var(--dark-color);
+}
