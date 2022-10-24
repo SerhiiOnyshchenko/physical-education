@@ -13,24 +13,24 @@ export default function Navbar() {
         </li>
         <li className="nav__item">
           <NavLink to="/k" className="nav__link">
-            Культовість
+            Секції
           </NavLink>
         </li>
         <li className="nav__item">
           <NavLink to="/u" className="nav__link">
-            Унікальність
+            Замагання
           </NavLink>
         </li>
         <li className="nav__item">
           <NavLink to="teachers" className="nav__link">
-            викладачі
+            Викладачі
           </NavLink>
         </li>
-        <li className="nav__item">
+        {/* <li className="nav__item">
           <NavLink to="/d" className="nav__link">
             Detox
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav__item">
           <NavLink to="contacts" className="nav__link">
             Контакти
