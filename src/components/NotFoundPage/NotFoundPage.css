@@ -1,0 +1,4 @@
+.NotFoundPage {
+	height: calc(100vh - 90px);
+	background: center no-repeat url(../../images/svg/map_b.svg);
+}

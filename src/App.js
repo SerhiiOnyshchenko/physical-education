@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage';
 import TeachersPage from './components/TeachersPage/TeachersPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import HistoryPage from './components/HistoryPage/HistoryPage';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="history" element={<HistoryPage />} />
         <Route path="teachers" element={<TeachersPage />} />
         <Route path="contacts" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </div>

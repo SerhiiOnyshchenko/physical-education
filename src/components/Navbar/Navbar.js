@@ -1,40 +1,40 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="history" className="nav__link">
+          <NavLink to="history" className="nav__link">
             Історія
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <NavLink to="/k" className="nav__link">
             Культовість
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <NavLink to="/u" className="nav__link">
             Унікальність
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="teachers" className="nav__link">
+          <NavLink to="teachers" className="nav__link">
             викладачі
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <NavLink to="/d" className="nav__link">
             Detox
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="contacts" className="nav__link">
+          <NavLink to="contacts" className="nav__link">
             Контакти
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

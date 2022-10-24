@@ -58,7 +58,7 @@ export default function ContactPage() {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5078.34632379552!2d30.61470424600219!3d50.47511996785701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9aeb713f634af04f!2sKyyivs%CA%B9kyy%20Mis%CA%B9kyy%20Medychnyy%20Koledzh!5e0!3m2!1sen!2sua!4v1666336416393!5m2!1sen!2sua"
               width="100%"
               height="450"
-              style={{ border: 0 }}
+              style={{ border: 0, background: '#f1f3f4' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

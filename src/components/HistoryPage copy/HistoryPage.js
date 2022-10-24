@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './HistoryPage.css';
-import Container from './../Container/Container';
+import Container from '../Container/Container';
 import ButtonDown from '../ButtonDown/ButtonDown';
 import img from '../../images/history/653c6f74ab89766d1ab5.png';
 import img2 from '../../images/history/d166bee0216f280fa0ef.png';
