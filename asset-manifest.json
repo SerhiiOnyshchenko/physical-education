@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/physical-education/static/css/main.603eb2c2.css",
-    "main.js": "/physical-education/static/js/main.423d5472.js",
+    "main.js": "/physical-education/static/js/main.01163f4b.js",
     "static/media/14.jpg": "/physical-education/static/media/14.fb1a4e154029306bc859.jpg",
     "static/media/16.jpg": "/physical-education/static/media/16.0129563d3f6746f6f29b.jpg",
     "static/media/1.jpg": "/physical-education/static/media/1.05e552de3a937eba125a.jpg",
@@ -24,10 +24,10 @@
     "static/media/btn-down.svg": "/physical-education/static/media/btn-down.49f121fd7e77e7aa6788.svg",
     "static/media/play.svg": "/physical-education/static/media/play.c92d4741e1bac7d102cc.svg",
     "main.603eb2c2.css.map": "/physical-education/static/css/main.603eb2c2.css.map",
-    "main.423d5472.js.map": "/physical-education/static/js/main.423d5472.js.map"
+    "main.01163f4b.js.map": "/physical-education/static/js/main.01163f4b.js.map"
   },
   "entrypoints": [
     "static/css/main.603eb2c2.css",
-    "static/js/main.423d5472.js"
+    "static/js/main.01163f4b.js"
   ]
 }
