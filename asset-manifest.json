@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/physical-education/static/css/main.6f1796c2.css",
-    "main.js": "/physical-education/static/js/main.c73182cd.js",
+    "main.css": "/physical-education/static/css/main.a6092e03.css",
+    "main.js": "/physical-education/static/js/main.31c420a8.js",
     "static/media/14.jpg": "/physical-education/static/media/14.fb1a4e154029306bc859.jpg",
     "static/media/1.jpg": "/physical-education/static/media/1.05e552de3a937eba125a.jpg",
+    "static/media/10.jpg": "/physical-education/static/media/10.dd91397ea5ea597020a1.jpg",
     "static/media/png": "/physical-education/static/media/d166bee0216f280fa0ef.dbbe06cbaed1db7072c0.png",
     "static/media/16.webp": "/physical-education/static/media/16.5fb5bcf8bc09ba166120.webp",
     "static/media/map_b.svg": "/physical-education/static/media/map_b.391cb6b836c3392c667d.svg",
     "static/media/EmSer.png": "/physical-education/static/media/EmSer.f4d4b023c21113a3a2a5.png",
+    "static/media/Main_Image.webp": "/physical-education/static/media/Main_Image.7d1283bdd2bb22de9a5d.webp",
+    "static/media/ukraine-i-love.png": "/physical-education/static/media/ukraine-i-love.fb2a1570c20a4065f845.png",
     "static/media/NoLid.png": "/physical-education/static/media/NoLid.14fb91a6d18d3637fa5d.png",
     "static/media/KuLub.png": "/physical-education/static/media/KuLub.359f582825973030ea43.png",
     "static/media/OnSer.png": "/physical-education/static/media/OnSer.fa32d608a1c352e0357a.png",
@@ -23,11 +26,11 @@
     "static/media/btn-down-dark.svg": "/physical-education/static/media/btn-down-dark.e9fb386b8ad95082fb4c.svg",
     "static/media/btn-down.svg": "/physical-education/static/media/btn-down.49f121fd7e77e7aa6788.svg",
     "static/media/play.svg": "/physical-education/static/media/play.c92d4741e1bac7d102cc.svg",
-    "main.6f1796c2.css.map": "/physical-education/static/css/main.6f1796c2.css.map",
-    "main.c73182cd.js.map": "/physical-education/static/js/main.c73182cd.js.map"
+    "main.a6092e03.css.map": "/physical-education/static/css/main.a6092e03.css.map",
+    "main.31c420a8.js.map": "/physical-education/static/js/main.31c420a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f1796c2.css",
-    "static/js/main.c73182cd.js"
+    "static/css/main.a6092e03.css",
+    "static/js/main.31c420a8.js"
   ]
 }
