@@ -1,0 +1,77 @@
+.btnLeftRight {
+	position: absolute;
+	bottom: 120px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.btnLeftRight__left,
+.btnLeftRight__right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 73px;
+	z-index: 10;
+}
+.btnLeftRight__left:hover,
+.btnLeftRight__right:hover {
+	cursor: pointer;
+}
+.btnLeftRight__left {
+	transform: rotate(90deg);
+}
+.btnLeftRight__right {
+	transform: rotate(-90deg);
+}
+
+.btnLeftRight__text {
+	font-size: 12px;
+	font-family: "Raleway", Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.btnLeftRight__btn {
+	width: 45px;
+	height: 54px;
+	background: center no-repeat url(../../images/svg/btn-down.svg);
+}
+
+.HistoryPage ~ .btnLeftRight,
+.ContactPage ~ .btnLeftRight {
+	color: #074f49;
+}
+.HistoryPage ~ .btnLeftRight .btnLeftRight__btn,
+.ContactPage ~ .btnLeftRight .btnLeftRight__btn {
+	background: center no-repeat url(../../images/svg/btn-down-dark.svg);
+}
+
+@media screen and (min-width: 320px) {
+	.btnLeftRight {
+		width: 480px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.btnLeftRight {
+		width: 768px;
+		padding: 0 32px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.btnLeftRight {
+		width: 1024px;
+	}
+}
+@media screen and (min-width: 1240px) {
+	.btnLeftRight {
+		width: 1200px;
+	}
+}

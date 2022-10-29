@@ -6,6 +6,7 @@ import img4 from '../../images/coledge/14.jpg';
 import ButtonDown from '../ButtonDown/ButtonDown';
 import { useDispatch } from 'react-redux';
 import { changeLoader } from './../../redux/loader/loader-actions';
+import LeftRight from '../LeftRight/LeftRight';
 
 export default function HomePage() {
   const homeMouse = useRef(null);

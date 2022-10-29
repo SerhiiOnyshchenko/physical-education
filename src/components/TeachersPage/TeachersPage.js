@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './TeachersPage.css';
 import Container from './../Container/Container';
 import ButtonDown from '../ButtonDown/ButtonDown';
 import CardTeacher from '../CardTeacher/CardTeacher';
 import { teachers } from '../db/teachers';
+import { useDispatch } from 'react-redux';
+import { changeLoader } from '../../redux/loader/loader-actions';
 
 export default function TeachersPage() {
   const [countTeacher, setCountTeacher] = useState(0);
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(changeLoader(true));
+    }, 1000);
+  }, []);
   const heandelLeft = () => {
     if (countTeacher === 0) {
       setCountTeacher(teachers.length - 1);

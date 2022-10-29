@@ -34,12 +34,7 @@
 .HistoryPage__title2 span {
 	margin-bottom: 30px;
 }
-.HistoryPage__section-1 .btnDown {
-	color: #074f49;
-}
-.HistoryPage__section-1 .btnDown__btn {
-	background: center no-repeat url(../../images/svg/btn-down-dark.svg);
-}
+
 .HistoryPage__section-2 {
 	position: relative;
 	min-height: 100vh;

@@ -14,6 +14,9 @@ export default function Navbar() {
         e.preventDefault();
         dispatch(changeLoader(false));
         setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+          });
           window.location.replace(e.target.href);
         }, 1000);
       });
@@ -29,13 +32,13 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/k" className="nav__link">
+          <NavLink to="sections" className="nav__link">
             Секції
           </NavLink>
         </li>
         <li className="nav__item">
           <NavLink to="/u" className="nav__link">
-            Замагання
+            Змагання
           </NavLink>
         </li>
         <li className="nav__item">
