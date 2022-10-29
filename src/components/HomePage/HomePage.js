@@ -4,14 +4,20 @@ import './HomePage.css';
 import img from '../../images/coledge/1.jpg';
 import img4 from '../../images/coledge/14.jpg';
 import ButtonDown from '../ButtonDown/ButtonDown';
+import { useDispatch } from 'react-redux';
+import { changeLoader } from './../../redux/loader/loader-actions';
 
 export default function HomePage() {
   const homeMouse = useRef(null);
   const home2efect = useRef(null);
   const home4efect = useRef(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     homeMouse.current.addEventListener('mousemove', parallax);
+    setTimeout(() => {
+      dispatch(changeLoader(true));
+    }, 1000);
   }, []);
 
   function parallax(e) {

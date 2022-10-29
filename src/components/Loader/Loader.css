@@ -1,0 +1,27 @@
+.Loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.9s ease-in-out;
+}
+.Loader1 {
+	transition-delay: 0.1s;
+	background-color: var(--another-bg);
+	z-index: 9909;
+}
+.Loader2 {
+	background-color: var(--light-bg);
+	z-index: 9908;
+}
+
+.Loader-in-top {
+	top: -100vh;
+}
+.Loader1.Loader-in-top {
+	transition-delay: 0s;
+}
+.Loader2.Loader-in-top {
+	transition-delay: 0.1s;
+}

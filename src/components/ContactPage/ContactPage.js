@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ContactPage.css';
 import Container from './../Container/Container';
+import { changeLoader } from '../../redux/loader/loader-actions';
+import { useDispatch } from 'react-redux';
 
 export default function ContactPage() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(changeLoader(true));
+    }, 1000);
+  }, []);
   return (
     <div className="ContactPage">
       <Container>

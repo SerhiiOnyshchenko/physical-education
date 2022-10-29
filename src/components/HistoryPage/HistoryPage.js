@@ -4,13 +4,19 @@ import Container from './../Container/Container';
 import ButtonDown from '../ButtonDown/ButtonDown';
 import img from '../../images/history/653c6f74ab89766d1ab5.png';
 import img2 from '../../images/history/d166bee0216f280fa0ef.png';
+import { changeLoader } from '../../redux/loader/loader-actions';
+import { useDispatch } from 'react-redux';
 
 export default function HistoryPage() {
   const HistoryPageMouse = useRef(null);
   const HistoryPageEfect = useRef(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     HistoryPageMouse.current.addEventListener('mousemove', parallax);
+    setTimeout(() => {
+      dispatch(changeLoader(true));
+    }, 1000);
   }, []);
 
   function parallax(e) {

@@ -7,6 +7,7 @@ import TeachersPage from './components/TeachersPage/TeachersPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import HistoryPage from './components/HistoryPage/HistoryPage';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
+import Loader from './components/Loader/Loader';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <Loader />
     </div>
   );
 }
