@@ -36,9 +36,6 @@ export default function HomePage() {
     home2efect.current.style.transform = `translate3d(${x}px,${y}px,0px)`;
     home4efect.current.style.transform = `translate3d(${x}px,${y}px,0px)`;
   }
-  const playVideo = () => {
-    setShowVideo(true);
-  };
 
   return (
     <div ref={homeMouse}>
