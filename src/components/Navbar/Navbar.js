@@ -1,56 +1,43 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { changeLoader } from '../../redux/loader/loader-actions';
+import { navList } from '../db/linksArr';
 
 export default function Navbar() {
+  const location = useLocation();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const arrLinks = document.querySelectorAll('.nav__link');
-    arrLinks.forEach(el => {
-      el.addEventListener('click', e => {
-        e.preventDefault();
-        dispatch(changeLoader(false));
-        setTimeout(() => {
-          window.scrollTo({
-            top: 0,
-          });
-          window.location.replace(e.target.href);
-        }, 1000);
+  const clickLink = e => {
+    e.preventDefault();
+    if (location.pathname === `/${e.target.dataset.url}`) {
+      return;
+    }
+    dispatch(changeLoader(false));
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
       });
-    });
-  }, []);
-
+      navigate(`${e.target.dataset.url}`);
+    }, 1000);
+  };
   return (
     <nav className="nav">
       <ul className="nav__list">
-        <li className="nav__item">
-          <NavLink to="history" className="nav__link">
-            Історія
-          </NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="sections" className="nav__link">
-            Секції
-          </NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="/u" className="nav__link">
-            Змагання
-          </NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="teachers" className="nav__link">
-            Викладачі
-          </NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="contacts" className="nav__link">
-            Контакти
-          </NavLink>
-        </li>
+        {navList.map(({ title, url }) => (
+          <li key={title} className="nav__item">
+            <NavLink
+              to={url}
+              data-url={url}
+              className="nav__link"
+              onClick={clickLink}
+            >
+              {title}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

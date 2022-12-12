@@ -91,4 +91,5 @@ code {
 
 	--main-color: #cceaed;
 	--dark-color: #4a918e;
+	--transition: all 0.5s linear;
 }

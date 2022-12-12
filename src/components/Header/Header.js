@@ -2,13 +2,14 @@ import React from 'react';
 import Container from '../Container/Container';
 import Navbar from '../Navbar/Navbar';
 import './Header.css';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { changeLoader } from '../../redux/loader/loader-actions';
 import { useDispatch } from 'react-redux';
 
 export default function Header() {
   const dispatch = useDispatch();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const clickLink = e => {
     if (location.pathname === '/') {
@@ -20,16 +21,16 @@ export default function Header() {
       window.scrollTo({
         top: 0,
       });
-      window.location.replace('http://localhost:3000/physical-education');
+      navigate('/');
     }, 1000);
   };
   return (
     <header className="header">
       <Container>
         <div className="header__container">
-          <Link to="/" onClick={e => clickLink(e)}>
+          <NavLink to="/" onClick={clickLink}>
             <div className="logo"></div>
-          </Link>
+          </NavLink>
           <Navbar />
         </div>
       </Container>
