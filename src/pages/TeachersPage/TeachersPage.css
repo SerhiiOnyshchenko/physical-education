@@ -9,6 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	margin-top: 83px;
 	background: center / cover no-repeat url(../../images/Pages/2Main_Image.webp);
 }
 .TeachersPage__title {

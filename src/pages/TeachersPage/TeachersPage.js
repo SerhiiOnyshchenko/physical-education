@@ -6,6 +6,7 @@ import CardTeacher from '../../components/CardTeacher/CardTeacher';
 import { teachers } from '../../components/db/teachers';
 import { useDispatch } from 'react-redux';
 import { changeLoader } from '../../redux/loader/loader-actions';
+import Footer from './../../components/Footer/Footer';
 
 export default function TeachersPage() {
   const [countTeacher, setCountTeacher] = useState(0);
@@ -62,6 +63,7 @@ export default function TeachersPage() {
           ></button>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

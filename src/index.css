@@ -93,3 +93,24 @@ code {
 	--dark-color: #4a918e;
 	--transition: all 0.5s linear;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--main-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--dark-color);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

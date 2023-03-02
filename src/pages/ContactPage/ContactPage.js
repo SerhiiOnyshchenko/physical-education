@@ -23,7 +23,7 @@ export default function ContactPage() {
             <div className="ContactPage__left">
               <div className="ContactPage__address-ua">
                 <h3 className="ContactPage__title">
-                  КИЇВСЬКИЙ МІСЬКИЙ МЕДИЧНИЙ ФАХОВИЙ КОЛЕДЖ
+                  ЗФПО "КИЇВСЬКИЙ МІСЬКИЙ МЕДИЧНИЙ ФАХОВИЙ КОЛЕДЖ"
                 </h3>
                 <div className="ContactPage__text">
                   <p>Адреса коледжу: 02660 Київ, вул. Братиславська, 5</p>
