@@ -43,11 +43,11 @@
 .btnLeftRight__btn:hover {
 	cursor: pointer;
 }
-.HistoryPage ~ .btnLeftRight,
+.DocumentPage ~ .btnLeftRight,
 .ContactPage ~ .btnLeftRight {
 	color: #074f49;
 }
-.HistoryPage ~ .btnLeftRight .btnLeftRight__btn,
+.DocumentPage ~ .btnLeftRight .btnLeftRight__btn,
 .ContactPage ~ .btnLeftRight .btnLeftRight__btn {
 	background: center no-repeat url(../../images/svg/btn-down-dark.svg);
 }

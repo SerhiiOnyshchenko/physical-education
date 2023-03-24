@@ -14,7 +14,7 @@
 	-ms-flex-align: center;
 	align-items: center;
 	border-radius: 20px;
-	background: linear-gradient(135deg, #f586d9, #6c1f8f);
+	background: var(--linear-gradient);
 }
 
 .card img {
@@ -35,7 +35,7 @@
 
 .card .content {
 	position: relative;
-	width: 70%;
+	width: 60%;
 	left: 20%;
 	padding: 20px 20px 20px 40px;
 	-webkit-transition: 0.5s;

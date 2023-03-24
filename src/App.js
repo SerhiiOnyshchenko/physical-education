@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import TeachersPage from './pages/TeachersPage/TeachersPage';
 import ContactPage from './pages/ContactPage/ContactPage';
-import HistoryPage from './pages/HistoryPage/HistoryPage';
+import DocumentPage from './pages/DocumentPage/DocumentPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Loader from './components/Loader/Loader';
 import SectionsPage from './pages/SectionsPage/SectionsPage';
@@ -17,7 +17,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="history" element={<HistoryPage />} />
+        <Route path="documents" element={<DocumentPage />} />
         <Route path="sections" element={<SectionsPage />} />
         <Route path="competition" element={<CompetitionPage />} />
         <Route path="teachers" element={<TeachersPage />} />

@@ -24,7 +24,7 @@ export default function CardTeacher({ teacher }) {
             setIsReadMore(!isReadMore);
           }}
         >
-          {isReadMore ? 'Read More' : 'Read Less'}
+          {isReadMore ? 'Більше' : 'Менше'}
         </button>
       </div>
       <img src={teacher.img} alt={teacher.name} />

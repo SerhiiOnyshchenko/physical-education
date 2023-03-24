@@ -109,7 +109,7 @@
 	color: var(--main-color);
 	padding: 10px 20px;
 	border-radius: 25px;
-	background: linear-gradient(135deg, #f586d9, #6c1f8f);
+	background: var(--linear-gradient);
 }
 .SectionsPage__teachers {
 	position: absolute;

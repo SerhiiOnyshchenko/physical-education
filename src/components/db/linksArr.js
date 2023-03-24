@@ -1,13 +1,13 @@
 export const linksList = [
   '/',
-  '/history',
+  '/documents',
   '/sections',
   '/competition',
   '/teachers',
   '/contacts',
 ];
 export const navList = [
-  { title: 'Історія', url: 'history' },
+  { title: 'Документи', url: 'documents' },
   { title: 'Секції', url: 'sections' },
   { title: 'Змагання', url: 'competition' },
   { title: 'Викладачі', url: 'teachers' },

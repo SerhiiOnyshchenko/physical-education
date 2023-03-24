@@ -1,5 +1,5 @@
 .competition {
-	background-image: url(../../images/Pages/4.webp);
+	background-image: url(../../images/Pages/competition/Competition.webp);
 	min-height: 680px;
 	height: 100vh;
 	background-position: center center;
@@ -36,27 +36,26 @@
 
 .box-img {
 	position: absolute;
-	top: 100px;
-	right: 100px;
+	top: 170px;
+	right: 50px;
 	z-index: 9;
 }
-.img {
-	width: 800px;
+.competition__img {
+	/* width: 800px; */
 	height: 420px;
 }
 
-.box-text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 420px;
+.competition__box-text {
+	margin-top: 30px;
+	width: 300px;
+	min-height: 400px;
 }
-.box-text h4 {
+.competition__box-text h4 {
 	font-size: 16px;
 	font-weight: 700;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
-.box-text p {
+p {
 	font-size: 14px;
 	font-family: "Raleway", Arial, sans-serif;
 	line-height: 1.4;
@@ -68,10 +67,9 @@
 	padding-top: 60px;
 	background-image: url(../../images/svg/pattern_1.svg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto;
 	background-position: left 100px top;
 	min-height: 710px;
-	height: 100vh;
 	z-index: 1;
 }
 .competition__container {
@@ -147,9 +145,6 @@
 	/* transition: all 0.5s linear; */
 }
 .box-text-4 {
-	position: absolute;
-	bottom: 50px;
-	right: 180px;
 	width: 290px;
 }
 .box-text-4 h4 {
@@ -162,4 +157,96 @@
 	font-family: "Raleway", Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.5px;
+}
+.history-box {
+	padding: 10px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.data {
+	font-weight: 700;
+	font-size: 18px;
+}
+.spoller {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	min-height: 50px;
+}
+.sector {
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: var(--dark-color);
+	border: 1px solid var(--main-color);
+	transition: var(--transition);
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	background: url(../../images/svg/add.svg) no-repeat center/cover;
+	transition: var(--transition);
+	color: var(--main-bg);
+	fill: var(--main-bg);
+}
+.tabs {
+	padding: 0 10px;
+	overflow: hidden;
+	max-height: 0;
+	height: auto;
+	transition: var(--transition);
+}
+.tabs.tabs-active {
+	max-height: 900px;
+}
+.List > li {
+	list-style: inside;
+	font-size: 14px;
+	font-family: "Raleway", Arial, sans-serif;
+	line-height: 1.4;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+.competition__box-about {
+	display: flex;
+	justify-content: space-around;
+}
+.competition__colum {
+	width: 32%;
+}
+
+.competition__colum-box-title {
+	height: 121px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.competition__colum-title {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.competition__colum-title-h5 {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 14px;
+	font-family: "Raleway", Arial, sans-serif;
+	line-height: 1.4;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+}
+.competition__detailed {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.competition__colum-text {
+	overflow: hidden;
+	max-height: 0;
+	height: auto;
+	transition: var(--transition);
+}
+.competition__colum-text-show {
+	max-height: 900px;
 }
