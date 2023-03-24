@@ -159,7 +159,6 @@ p {
 	letter-spacing: 0.5px;
 }
 .history-box {
-	padding: 10px;
 	font-size: 14px;
 	margin-top: 20px;
 }
@@ -168,15 +167,16 @@ p {
 	font-size: 18px;
 }
 .spoller {
+	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	cursor: pointer;
 	min-height: 50px;
+	border-bottom: 1px solid var(--main-color);
 }
 .sector {
 	margin-bottom: 20px;
-	padding: 15px;
 	background-color: var(--dark-color);
 	border: 1px solid var(--main-color);
 	transition: var(--transition);
@@ -190,11 +190,14 @@ p {
 	fill: var(--main-bg);
 }
 .tabs {
-	padding: 0 10px;
+	padding: 0 15px;
 	overflow: hidden;
 	max-height: 0;
 	height: auto;
 	transition: var(--transition);
+}
+.tabs p {
+	padding-top: 15px;
 }
 .tabs.tabs-active {
 	max-height: 900px;
