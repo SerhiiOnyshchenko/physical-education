@@ -45,25 +45,29 @@
 }
 
 .card .content h2 {
-	color: #ffffff;
+	font-family: "Oswald", Arial, sans-serif;
+	font-weight: 700;
+	color: var(--main-color);
 	text-transform: uppercase;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	line-height: 1.5em;
 }
 
 .card .content p {
-	color: #ffffff;
-	font-size: 1em;
+	font-family: "Raleway", Arial, sans-serif;
+	color: var(--main-color);
+	font-size: 1.2em;
 	line-height: 1.5em;
 }
 
 .readMore {
 	position: relative;
 	display: inline-block;
-	color: #111111;
+	color: var(--dark-color);
+	font-weight: 700;
 	padding: 10px 20px;
 	border-radius: 10px;
-	background: #fff;
+	background: var(--light-bg);
 	margin-top: 10px;
 	text-decoration: none;
 }

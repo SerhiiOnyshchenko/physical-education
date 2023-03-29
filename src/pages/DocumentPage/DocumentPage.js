@@ -1,37 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable jsx-a11y/anchor-has-content */
+import React, { useEffect } from 'react';
 import './DocumentPage.css';
-import img from '../../images/documents/653c6f74ab89766d1ab5.png';
-import img2 from '../../images/documents/d166bee0216f280fa0ef.png';
 import { changeLoader } from '../../redux/loader/loader-actions';
 import { useDispatch } from 'react-redux';
 import Container from '../../components/Container/Container';
 import ButtonDown from '../../components/ButtonDown/ButtonDown';
 
 export default function DocumentPage() {
-  const DocumentPageMouse = useRef(null);
-  const DocumentPageEfect = useRef(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    DocumentPageMouse.current.addEventListener('mousemove', parallax);
     setTimeout(() => {
       dispatch(changeLoader(true));
     }, 1000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function parallax(e) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const x = (width / 2 - mouseX) / 20;
-    const y = (height / 2 - mouseY) / 20;
-    DocumentPageEfect.current.style.transform = `translate3d(${x}px,${y}px,0px)`;
-  }
   return (
-    <div className="DocumentPage" ref={DocumentPageMouse}>
+    <div className="DocumentPage">
       <section className="DocumentPage__section-1">
         <Container>
           <h1 className="DocumentPage__title">
@@ -44,34 +30,92 @@ export default function DocumentPage() {
       </section>
       <section className="DocumentPage__section-2">
         <Container>
-          <h2 className="DocumentPage__title2">
-            <span className="DocumentPage__title-text1">жива</span>
-            <span className="DocumentPage__title-text2">легенда</span>
-            <span className="DocumentPage__title-text2">грузії</span>
-          </h2>
-          <div ref={DocumentPageEfect} className="DocumentPage__box-img">
-            <img className="DocumentPage__img" src={img} alt="image2" />
-          </div>
-          <div className="DocumentPage__box-img2">
-            <img
-              className="DocumentPage__img2"
-              src={img2}
-              alt="image2"
-              width="492"
-            />
-            <button className="DocumentPage__btn-play" type="button"></button>
-          </div>
-          <div className="DocumentPage__box-text">
-            <h4>Жива легенда Грузії</h4>
-            <p>
-              За останні 130 років вже понад 200 мільйонів людей по всьому світу
-              відчули живильну силу Borjomi.
-              <br />
-              <br />
-              Слоган кампанії «Жива вода, жива легенда» розповідає про цилющу
-              воду, що оживляє тіло, розум і душу.
-            </p>
-          </div>
+          <ul className="DocumentPage__list">
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Витяг робочої програми навчальної дисципліни «Фізичне виховання»
+                221 Стоматологія (3роки)
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/1z-9ph0DrNDEz5Ha54UHy4HQ8DFHewT-x/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Витяг робочої програми навчальної дисципліни «Фізичне виховання»
+                221 Стоматологія (2 роки)
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/15dCT4XZa0P8ZSzlTgpqGyY9QCRR2mlSH/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Витяг робочої програми навчальної дисципліни «Фізичне виховання»
+                та «Фізична культура» 221 Стоматологія
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/1MvrC5rcK7InKWfAUODAGG9n6ecUJWIx1/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Витяг робочої програми навчальної дисципліни «Фізичне виховання»
+                та «Фізична культура» 223 Медсестринство (4 роки)
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/1uccSet2Ndtp4oXxIPHhAYTCbO-AkT8NX/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Витяг робочої програми навчальної дисципліни «Фізичне виховання»
+                та «Фізична культура» 223 Медсестринство (3 роки)
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/1Qnkkd9AOr2_ca5ysePwlleKcHcinOkmY/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Правила техніки безпеки при заняттях фізичною культурою в умовах
+                самоізоляції на дистанційному навчанні
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/10rsucpNRMAAacIyeUe-n5kRPIStP1aJu/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+            <li className="DocumentPage__item">
+              <h3 className="DocumentPage__title-h3">
+                Рекомендації щодо виконання фізичних вправ в умовах
+                дистанційного навчання студентам ЗФПО «КММФК»
+              </h3>
+              <a
+                className="DocumentPage__link"
+                href="https://drive.google.com/file/d/1LsPMZVbVsf4Ae1EI9VgRdbh90DtYIbQN/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </li>
+          </ul>
         </Container>
       </section>
     </div>

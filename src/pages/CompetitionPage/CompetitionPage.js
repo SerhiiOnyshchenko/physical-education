@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import './CompetitionPage.css';
 import volleyballTeam from '../../images/Pages/competition/volleyballTeam.jpg';
 import badmintonTeam from '../../images/Pages/competition/badmintonTeam.jpg';
-import img4 from '../../images/coledge/14.jpg';
 import { useDispatch } from 'react-redux';
 import { changeLoader } from '../../redux/loader/loader-actions';
 import Container from '../../components/Container/Container';
@@ -507,38 +506,6 @@ export default function CompetitionPage() {
           </div>
         </Container>
       </div>
-      {/* <div className="competition-3">
-        <Container>
-          <div className="competition__comtainer">
-            <h2 className="competition__title-3">
-              <span className="competition__text-31">ювенільна</span>
-              <span className="competition__text-32">вода</span>
-            </h2>
-            <button className="competition__btn-play" type="button"></button>
-          </div>
-        </Container>
-      </div> */}
-      {/* <div className="competition-4">
-        <Container>
-          <div className="competition__container">
-            <h2 className="competition__title-4">
-              <span className="competition__text-41">ювенільна</span>
-              <span className="competition__text-42">вода</span>
-            </h2>
-          </div>
-          <div ref={competition4efect} className="box-img4">
-            <img src={img4} alt="image1" width="700" height="420" />
-          </div>
-          <div className="box-text-4">
-            <h4>З глибоких грузинських джерел</h4>
-            <p>
-              Borjomi піднімається з глибини 8000 метрів. Ювенільні води – це
-              води, що ніколи раніше не виходили на поверхню, а тепер, під час
-              свого підйому, вбирають в себе унікальну енергію мінералів.
-            </p>
-          </div>
-        </Container>
-      </div> */}
       <Footer />
     </div>
   );

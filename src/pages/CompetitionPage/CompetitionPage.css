@@ -12,7 +12,7 @@
 }
 
 .competition__title {
-	font-size: 120px;
+	font-size: 48px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -25,7 +25,7 @@
 }
 .competition__title-2 {
 	position: relative;
-	font-size: 100px;
+	font-size: 42px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -41,8 +41,7 @@
 	z-index: 9;
 }
 .competition__img {
-	/* width: 800px; */
-	height: 420px;
+	height: 180px;
 }
 
 .competition__box-text {
@@ -83,7 +82,7 @@ p {
 	top: 60px;
 	left: 110px;
 	width: 850px;
-	font-size: 120px;
+	font-size: 48px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -126,7 +125,7 @@ p {
 	top: 60px;
 	left: 110px;
 	width: 850px;
-	font-size: 120px;
+	font-size: 48px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -135,15 +134,6 @@ p {
 	z-index: 10;
 }
 
-.box-img4 {
-	position: absolute;
-	top: 100px;
-	left: 300px;
-	width: 700px;
-	height: 420px;
-	z-index: 9;
-	/* transition: all 0.5s linear; */
-}
 .box-text-4 {
 	width: 290px;
 }
@@ -252,4 +242,17 @@ p {
 }
 .competition__colum-text-show {
 	max-height: 900px;
+}
+
+@media screen and (min-width: 768px) {
+	.competition__title,
+	.competition__title-2,
+	.competition__title-3,
+	.competition__title-4 {
+		font-size: 120px;
+	}
+	.competition__img {
+		/* width: 800px; */
+		height: 420px;
+	}
 }

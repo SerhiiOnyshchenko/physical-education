@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { changeLoader } from '../../redux/loader/loader-actions';
 import { navList } from '../db/linksArr';
 
-export default function Navbar() {
+export default function Navbar({ toggle = () => {} }) {
   const location = useLocation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -21,6 +21,7 @@ export default function Navbar() {
         top: 0,
       });
       navigate(`${e.target.dataset.url}`);
+      toggle();
     }, 1000);
   };
   return (

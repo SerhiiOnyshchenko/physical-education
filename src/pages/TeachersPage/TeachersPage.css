@@ -13,7 +13,7 @@
 	background: center / cover no-repeat url(../../images/Pages/2Main_Image.webp);
 }
 .TeachersPage__title {
-	font-size: 120px;
+	font-size: 48px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -54,4 +54,9 @@
 	bottom: 100px;
 	display: flex;
 	align-items: center;
+}
+@media screen and (min-width: 768px) {
+	.TeachersPage__title {
+		font-size: 120px;
+	}
 }

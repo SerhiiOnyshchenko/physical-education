@@ -102,6 +102,7 @@
 	display: flex;
 	justify-content: center;
 	width: 200px;
+	cursor: pointer;
 }
 .SectionsPage__button-badminton {
 	font-size: 18px;

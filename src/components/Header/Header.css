@@ -2,8 +2,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	background-color: var(--main-bg);
+	width: 100vw;
+	background-color: transparent;
 	z-index: 100;
 }
 .header__container {
@@ -11,9 +11,22 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.header__logo-link {
+	z-index: 455;
+}
 .logo {
 	display: inline-block;
 	background: url(../../images/svg/logo1.svg) no-repeat center;
 	width: 270px;
 	height: 80px;
+}
+.body-opened {
+	height: 100vh;
+	min-height: 100vh;
+	overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+	.header {
+		background-color: var(--main-bg);
+	}
 }

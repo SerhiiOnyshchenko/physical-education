@@ -71,6 +71,7 @@ img {
 }
 
 body {
+	width: 100%;
 	margin: 0;
 	font-family: "Raleway", "Oswald", Arial, sans-serif;
 	font-size: 12px;
@@ -88,7 +89,7 @@ code {
 	--main-bg: #3d8685;
 	--another-bg: #4a918e;
 	--light-bg: #cceaed;
-	--linear-gradient: linear-gradient(135deg, #86a4f5, #211f8f);
+	--linear-gradient: linear-gradient(135deg, #94e2e9, #327572);
 
 	--main-color: #cceaed;
 	--dark-color: #4a918e;
