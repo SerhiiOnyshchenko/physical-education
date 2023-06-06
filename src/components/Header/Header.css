@@ -17,8 +17,8 @@
 .logo {
 	display: inline-block;
 	background: url(../../images/svg/logo1.svg) no-repeat center;
-	width: 270px;
-	height: 80px;
+	width: 200px;
+	height: 60px;
 }
 .body-opened {
 	height: 100vh;
@@ -28,5 +28,9 @@
 @media screen and (min-width: 1024px) {
 	.header {
 		background-color: var(--main-bg);
+	}
+	.logo {
+		width: 270px;
+		height: 80px;
 	}
 }

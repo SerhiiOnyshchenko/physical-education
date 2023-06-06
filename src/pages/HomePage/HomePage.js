@@ -41,7 +41,7 @@ export default function HomePage() {
     <div ref={homeMouse}>
       <div className="home">
         <Container>
-          <div className="home__comtainer">
+          <div className="home__container">
             <h1 className="home__title">
               <span className="home__text-1">фізкультурно</span>
               <span className="home__text-2">спортивний</span>
@@ -57,10 +57,10 @@ export default function HomePage() {
             <span className="home__text-1">гімнастичний</span>
             <span className="home__text-2">зал</span>
           </h2>
-          <div ref={home2efect} className="box-img">
-            <img className="img" src={img} alt="image2" height="420" />
+          <div ref={home2efect} className="home__box-img">
+            <img src={img} alt="image2" />
           </div>
-          <div className="box-text">
+          <div className="home__box-text">
             <h4>Найглибший сайт Borjomi</h4>
             <p>
               Thedeepestsite буквально занурює тебе на глибину зародження
@@ -74,24 +74,18 @@ export default function HomePage() {
       </div>
       <div className="home-3">
         <Container>
-          <div className="home__comtainer">
+          <div className="home__container">
             <h2 className="home__title-3">
               <span
-                className="home__text-31"
-                style={
-                  showVideo
-                    ? { left: '-100px', top: '-50px', zIndex: '50' }
-                    : { left: '0', top: '0', zIndex: '0' }
+                className={
+                  showVideo ? 'home__text-31 playVideo' : 'home__text-31'
                 }
               >
                 викладачі
               </span>
               <span
-                className="home__text-32"
-                style={
-                  showVideo
-                    ? { left: '200px', zIndex: '50' }
-                    : { left: '0', zIndex: '0' }
+                className={
+                  showVideo ? 'home__text-32 playVideo' : 'home__text-32'
                 }
               >
                 циклу
@@ -100,12 +94,7 @@ export default function HomePage() {
             <div className="home__box-video">
               {showVideo ? (
                 <>
-                  <video
-                    className="home__video"
-                    width="700"
-                    height="420"
-                    controls
-                  >
+                  <video className="home__video" controls>
                     <source src={video} type="video/mp4" />
                   </video>
                   <button
@@ -116,7 +105,7 @@ export default function HomePage() {
                 </>
               ) : (
                 <>
-                  <img src={img3} width="700" alt="plase" />
+                  <img src={img3} alt="teachers" />
                   <button
                     className="home__btn-play"
                     type="button"
@@ -130,14 +119,14 @@ export default function HomePage() {
       </div>
       <div className="home-4">
         <Container>
-          <div className="home__comtainer">
+          <div className="home__container">
             <h2 className="home__title-4">
-              <span className="home__text-41">ювенільна</span>
-              <span className="home__text-42">вода</span>
+              <span className="home__text-41">тренажерна</span>
+              <span className="home__text-42">зала</span>
             </h2>
           </div>
           <div ref={home4efect} className="box-img4">
-            <img src={img4} alt="image1" width="700" height="420" />
+            <img src={img4} alt="gym" width="600" height="420" />
           </div>
           <div className="box-text-4">
             <h4>З глибоких грузинських джерел</h4>

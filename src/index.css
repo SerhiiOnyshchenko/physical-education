@@ -92,6 +92,7 @@ code {
 	--linear-gradient: linear-gradient(135deg, #94e2e9, #327572);
 
 	--main-color: #cceaed;
+	--middle-color: #77c7ce;
 	--dark-color: #4a918e;
 	--transition: all 0.3s linear;
 }
