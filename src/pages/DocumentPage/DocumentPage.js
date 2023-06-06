@@ -38,7 +38,7 @@ export default function DocumentPage() {
               </h3>
               <a
                 className="DocumentPage__link"
-                href="https://drive.google.com/file/d/1z-9ph0DrNDEz5Ha54UHy4HQ8DFHewT-x/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xzDOpI0rBw2IV27_gm9mouuOShg-M6JH/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               ></a>
@@ -50,12 +50,12 @@ export default function DocumentPage() {
               </h3>
               <a
                 className="DocumentPage__link"
-                href="https://drive.google.com/file/d/15dCT4XZa0P8ZSzlTgpqGyY9QCRR2mlSH/view?usp=sharing"
+                href="https://drive.google.com/file/d/14swWm8N1suq_ktHztUSq9lj4OuL2dVqt/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               ></a>
             </li>
-            <li className="DocumentPage__item">
+            {/* <li className="DocumentPage__item">
               <h3 className="DocumentPage__title-h3">
                 Витяг робочої програми навчальної дисципліни «Фізичне виховання»
                 та «Фізична культура» 221 Стоматологія
@@ -66,7 +66,7 @@ export default function DocumentPage() {
                 target="_blank"
                 rel="noreferrer"
               ></a>
-            </li>
+            </li> */}
             <li className="DocumentPage__item">
               <h3 className="DocumentPage__title-h3">
                 Витяг робочої програми навчальної дисципліни «Фізичне виховання»
@@ -74,7 +74,7 @@ export default function DocumentPage() {
               </h3>
               <a
                 className="DocumentPage__link"
-                href="https://drive.google.com/file/d/1uccSet2Ndtp4oXxIPHhAYTCbO-AkT8NX/view?usp=sharing"
+                href="https://drive.google.com/file/d/1R7at_zxzZa2FToUA682xDw1x5DsiNcRr/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               ></a>
@@ -86,12 +86,12 @@ export default function DocumentPage() {
               </h3>
               <a
                 className="DocumentPage__link"
-                href="https://drive.google.com/file/d/1Qnkkd9AOr2_ca5ysePwlleKcHcinOkmY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1giNpT0ylBXMzzx8x1FFpr8lYiR6n5uSO/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               ></a>
             </li>
-            <li className="DocumentPage__item">
+            {/* <li className="DocumentPage__item">
               <h3 className="DocumentPage__title-h3">
                 Правила техніки безпеки при заняттях фізичною культурою в умовах
                 самоізоляції на дистанційному навчанні
@@ -114,7 +114,7 @@ export default function DocumentPage() {
                 target="_blank"
                 rel="noreferrer"
               ></a>
-            </li>
+            </li> */}
           </ul>
         </Container>
       </section>
