@@ -71,7 +71,6 @@ export default function SectionsPage() {
                     src={Serhii}
                     alt="Serhii"
                   />
-
                   <img
                     className="SectionsPage__teacher-img"
                     src={Luba}
@@ -344,6 +343,11 @@ export default function SectionsPage() {
                   />
                   <img
                     className="SectionsPage__teacher-img"
+                    src={Luba}
+                    alt="Luba"
+                  />
+                  <img
+                    className="SectionsPage__teacher-img"
                     src={Serhii}
                     alt="Serhii"
                   />
@@ -413,6 +417,11 @@ export default function SectionsPage() {
                     className="SectionsPage__teacher-img"
                     src={Tamara}
                     alt="Tamara"
+                  />
+                  <img
+                    className="SectionsPage__teacher-img"
+                    src={Serhii}
+                    alt="Serhii"
                   />
                   <img
                     className="SectionsPage__teacher-img"

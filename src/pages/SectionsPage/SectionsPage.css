@@ -42,6 +42,7 @@
 	background: 150px 0px no-repeat url(../../images/svg/pattern_2.svg),
 		0px 200px no-repeat radial-gradient(ellipse at bottom, #e5d4de 0%, var(--main-bg) 70%);
 }
+
 .SectionsPage__content {
 	position: relative;
 	top: 0;

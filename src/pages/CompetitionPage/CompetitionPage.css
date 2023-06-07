@@ -151,6 +151,7 @@ p {
 .history-box {
 	font-size: 14px;
 	margin-top: 20px;
+	margin-bottom: 100px;
 }
 .data {
 	font-weight: 700;
@@ -188,6 +189,7 @@ p {
 }
 .tabs p {
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .tabs.tabs-active {
 	max-height: 900px;
