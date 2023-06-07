@@ -42,6 +42,7 @@
 	transition: 0.5s;
 	opacity: 0;
 	visibility: hidden;
+	transition: var(--transition);
 }
 
 .card .content h2 {
@@ -51,6 +52,7 @@
 	text-transform: uppercase;
 	font-size: 2.8em;
 	line-height: 1.5em;
+	transition: var(--transition);
 }
 
 .card .content p {
@@ -58,6 +60,7 @@
 	color: var(--main-color);
 	font-size: 1.2em;
 	line-height: 1.5em;
+	transition: var(--transition);
 }
 
 .readMore {
@@ -68,8 +71,9 @@
 	padding: 10px 20px;
 	border-radius: 10px;
 	background: var(--light-bg);
-	margin-top: 10px;
+	margin: 10px 0 0;
 	text-decoration: none;
+	transition: var(--transition);
 }
 
 .card:hover .content {
@@ -107,10 +111,26 @@
 }
 
 @media (max-width: 420px) {
-	.card:hover img {
+	.card {
+		position: relative;
+		width: auto;
+		max-width: 240px;
+		margin: 5px;
+	}
+	.card img {
 		height: 300px;
 	}
+	.card:hover img {
+		height: 275px;
+	}
+	.card:hover {
+		height: 650px;
+	}
 	.card .content {
-		padding: 30px;
+		padding: 10px;
+	}
+	.readMore {
+		display: block;
+		margin: 10px auto;
 	}
 }

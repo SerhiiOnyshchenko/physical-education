@@ -13,13 +13,14 @@
 	background: center / cover no-repeat url(../../images/Pages/2Main_Image.webp);
 }
 .TeachersPage__title {
-	font-size: 48px;
+	font-size: 56px;
 	font-family: "Oswald", Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
-	width: 900px;
+	color: var(--dark-color);
+	width: 290px;
 }
 .TeachersPage__title-text2 {
 	align-self: flex-end;
@@ -27,6 +28,7 @@
 .TeachersPage__section-2 {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	/* align-items: center; */
 	min-height: 100vh;
@@ -34,29 +36,45 @@
 	background: 150px no-repeat url(../../images/svg/pattern_1.svg);
 }
 .TeachersPage__title2 {
+	color: var(--main-color);
 	margin-top: 100px;
 }
+.TeachersPage__btn-left,
+.TeachersPage__btn-right {
+	width: 30px;
+	height: 36px;
+}
+
 .TeachersPage__btn-left {
-	width: 45px;
-	height: 54px;
 	transform: rotate(90deg);
-	background: center no-repeat url(../../images/svg/btn-down.svg);
+	background: center/cover no-repeat url(../../images/svg/btn-down.svg);
 }
 .TeachersPage__btn-right {
-	width: 45px;
-	height: 54px;
 	transform: rotate(-90deg);
-	background: center no-repeat url(../../images/svg/btn-down.svg);
+	background: center/cover no-repeat url(../../images/svg/btn-down.svg);
 }
 .TeachersPage__box-card {
-	position: absolute;
-	right: 100px;
-	bottom: 100px;
 	display: flex;
 	align-items: center;
+	margin: 0 auto 50px;
 }
 @media screen and (min-width: 768px) {
 	.TeachersPage__title {
 		font-size: 120px;
+		width: 900px;
+	}
+	.TeachersPage__section-2 {
+		flex-direction: row;
+	}
+	.TeachersPage__box-card {
+		position: absolute;
+		right: 100px;
+		bottom: 100px;
+		margin-bottom: 0;
+	}
+	.TeachersPage__btn-left,
+	.TeachersPage__btn-right {
+		width: 45px;
+		height: 54px;
 	}
 }
