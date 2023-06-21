@@ -13,9 +13,7 @@ export default function CardTeacher({ teacher }) {
           ))}
         </div>
         <p className={isReadMore ? s.hidden : ''}>
-          I'm improving my skills in this direction and expanding them with new
-          technology. I would like to find a project work/full-time job in a
-          creative company with up-to-date tasks and collaborative team!
+          {teacher.moreInfo || 'Опис досягнень'}
         </p>
         <button
           type="button"
