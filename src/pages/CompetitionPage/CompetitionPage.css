@@ -35,13 +35,14 @@
 }
 
 .box-img {
-	position: absolute;
-	top: 170px;
-	right: 50px;
+	position: relative;
+	top: 0;
+	right: 10px;
 	z-index: 9;
 }
 .competition__img {
-	height: 180px;
+	width: 290px;
+	height: auto;
 }
 
 .competition__box-text {
@@ -183,8 +184,8 @@ p {
 .tabs {
 	padding: 0 15px;
 	overflow: hidden;
-	max-height: 0;
-	height: auto;
+	/* max-height: 0; */
+	height: 0;
 	transition: var(--transition);
 }
 .tabs p {
@@ -192,7 +193,7 @@ p {
 	padding-bottom: 15px;
 }
 .tabs.tabs-active {
-	max-height: 900px;
+	height: auto;
 }
 .List > li {
 	list-style: inside;
@@ -205,14 +206,15 @@ p {
 
 .competition__box-about {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 }
 .competition__colum {
-	width: 32%;
+	width: 100%;
 }
 
 .competition__colum-box-title {
-	height: 121px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -254,7 +256,23 @@ p {
 		font-size: 120px;
 	}
 	.competition__img {
-		/* width: 800px; */
+		width: auto;
 		height: 420px;
+	}
+	.box-img {
+		position: absolute;
+		top: 170px;
+		right: 50px;
+		z-index: 9;
+	}
+
+	.competition__box-about {
+		flex-direction: row;
+	}
+	.competition__colum {
+		width: 32%;
+	}
+	.competition__colum-box-title {
+		height: 121px;
 	}
 }

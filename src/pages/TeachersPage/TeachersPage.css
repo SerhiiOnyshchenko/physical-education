@@ -9,7 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	margin-top: 83px;
+	margin-top: 0;
 	background: center / cover no-repeat url(../../images/Pages/2Main_Image.webp);
 }
 .TeachersPage__title {
@@ -62,6 +62,9 @@
 	.TeachersPage__title {
 		font-size: 120px;
 		width: 950px;
+	}
+	.TeachersPage__section-1 {
+		margin-top: 83px;
 	}
 	.TeachersPage__section-2 {
 		flex-direction: row;

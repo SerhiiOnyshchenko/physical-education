@@ -15,6 +15,8 @@ export default function CompetitionPage() {
   const dispatch = useDispatch();
   const [openSector1, setOpenSector1] = useState(false);
   const [openSector2, setOpenSector2] = useState(false);
+  const [openSector3, setOpenSector3] = useState(false);
+  const [openSector4, setOpenSector4] = useState(false);
   const [openDetailed1, setOpenDetailed1] = useState(true);
   const [openDetailed2, setOpenDetailed2] = useState(true);
   const [openDetailed3, setOpenDetailed3] = useState(true);
@@ -209,18 +211,18 @@ export default function CompetitionPage() {
           <div className="history-box">
             <div
               className="sector"
-              onClick={() => setOpenSector2(!openSector2)}
+              onClick={() => setOpenSector1(!openSector1)}
             >
               <div className="spoller">
                 <div className="data">2022-2023 навчальний рік</div>
                 <div
                   className="icon"
                   style={{
-                    transform: `${openSector2 ? 'rotate(45deg)' : 'rotate(0)'}`,
+                    transform: `${openSector1 ? 'rotate(45deg)' : 'rotate(0)'}`,
                   }}
                 ></div>
               </div>
-              <div className={openSector2 ? 'tabs tabs-active' : 'tabs'}>
+              <div className={openSector1 ? 'tabs tabs-active' : 'tabs'}>
                 <p>
                   Загальні умови проведення змагань, Програма. Всі учасники, які
                   беруть участь у чемпіонаті, розподіляються на групи по 12
@@ -257,18 +259,18 @@ export default function CompetitionPage() {
             </div>
             <div
               className="sector"
-              onClick={() => setOpenSector1(!openSector1)}
+              onClick={() => setOpenSector2(!openSector2)}
             >
               <div className="spoller">
                 <div className="data">до-2022 навчального року</div>
                 <div
                   className="icon"
                   style={{
-                    transform: `${openSector1 ? 'rotate(45deg)' : 'rotate(0)'}`,
+                    transform: `${openSector2 ? 'rotate(45deg)' : 'rotate(0)'}`,
                   }}
                 ></div>
               </div>
-              <div className={openSector1 ? 'tabs tabs-active' : 'tabs'}>
+              <div className={openSector2 ? 'tabs tabs-active' : 'tabs'}>
                 <p>
                   Загальні умови проведення змагань, Програма. Всі учасники, які
                   беруть участь у чемпіонаті, розподіляються на групи по 12
@@ -409,18 +411,18 @@ export default function CompetitionPage() {
           <div className="history-box">
             <div
               className="sector"
-              onClick={() => setOpenSector2(!openSector2)}
+              onClick={() => setOpenSector3(!openSector3)}
             >
               <div className="spoller">
                 <div className="data">2022-2023 навчальний рік</div>
                 <div
                   className="icon"
                   style={{
-                    transform: `${openSector2 ? 'rotate(45deg)' : 'rotate(0)'}`,
+                    transform: `${openSector3 ? 'rotate(45deg)' : 'rotate(0)'}`,
                   }}
                 ></div>
               </div>
-              <div className={openSector2 ? 'tabs tabs-active' : 'tabs'}>
+              <div className={openSector3 ? 'tabs tabs-active' : 'tabs'}>
                 <p>
                   Загальні умови проведення змагань, Програма. Всі учасники, які
                   беруть участь у чемпіонаті, розподіляються на групи по 12
@@ -457,18 +459,18 @@ export default function CompetitionPage() {
             </div>
             <div
               className="sector"
-              onClick={() => setOpenSector1(!openSector1)}
+              onClick={() => setOpenSector4(!openSector4)}
             >
               <div className="spoller">
                 <div className="data">до-2022 навчального року</div>
                 <div
                   className="icon"
                   style={{
-                    transform: `${openSector1 ? 'rotate(45deg)' : 'rotate(0)'}`,
+                    transform: `${openSector4 ? 'rotate(45deg)' : 'rotate(0)'}`,
                   }}
                 ></div>
               </div>
-              <div className={openSector1 ? 'tabs tabs-active' : 'tabs'}>
+              <div className={openSector4 ? 'tabs tabs-active' : 'tabs'}>
                 <p>
                   Загальні умови проведення змагань, Програма. Всі учасники, які
                   беруть участь у чемпіонаті, розподіляються на групи по 12
